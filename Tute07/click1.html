@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> GET MARKS</title>
+    </head>
+    <body>
+        
+        <script>
+            
+                var total=0;
+                for(var i=1;i<=5;i++)
+                {
+                var mark=window.prompt(`Enter your marks ${i}`);
+                    
+                    total=total+parseInt(mark);
+                }
+                document.write(`Total:${total} `);
+                document.write(`<br>`);
+                
+                document.write(`Average: ${total/5}`);
+             document.write(`<br>`);
+                function MyFunction()
+            {
+                if(total>30)
+                    {
+                        window.alert(`Congrats! You Passed`);
+                    }
+                else
+                    {
+                        window.alert(`Better luck next time`);
+                    }
+            }
+        </script>
+        <button onclick="MyFunction()">GRADE</button>
+    </body>
+</html>
